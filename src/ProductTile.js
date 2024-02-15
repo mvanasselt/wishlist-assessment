@@ -8,7 +8,7 @@ export function ProductTile({ product, name, description, image, price, onAddWis
   }
 
   return (
-    <div className="border-solid border-2">
+    <div className="bg-neutral-50 w-[250px] flex flex-col ">
       <img className="" src={image} alt={name} />
       <div className="">
         <h3 className="font-bold">{name}</h3>

@@ -54,10 +54,10 @@ export default function App() {
   
 
   return (
-    <div className="App">
+    <>
       <Header onShowWishlist={handleShowWishlist} wishlistItems={wishlistItems}/>
       <ProductList products={products} onAddWishlistItem={handleAddWishlistItem}/>
       {showWishlist && <Wishlist wishlistItems={wishlistItems} onRemoveWishlistItem={handleRemoveWishlistItem}/>}
-    </div>
+    </>
   );
 }

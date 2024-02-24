@@ -52,7 +52,6 @@ export default function App() {
       }
     };
   
-
   return (
     <>
       <Header onShowWishlist={handleShowWishlist} wishlistItems={wishlistItems}/>

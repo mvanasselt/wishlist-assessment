@@ -1,6 +1,9 @@
-import { ProductTile } from "./ProductTile";
+// import { ProductTile } from "./ProductTile";
+import { Button } from "./Button";
 
 export function ProductList({ products, onAddWishlistItem }) {
+  {console.log(products)}
+
   return (
     <div className="bg-neutral-100 flex flex-col items-center ">
       <div className="flex gap-2 m-4">
@@ -28,10 +31,30 @@ export function ProductList({ products, onAddWishlistItem }) {
   );
 }
 
+function ProductTile({ product, name, description, image, price, onAddWishlistItem }) {
+  function handleAddItem() {
+    onAddWishlistItem(product);
+  }
+
+  return (
+    <div className="bg-neutral-50 w-[250px] flex flex-col hover:shadow-xl p-0.5">
+      <Button onClick={handleAddItem}>Add to wishlist</Button>
+      <img src={process.env.PUBLIC_URL + '/' + image} alt={name} />
+      <div>
+        <h3 className="font-bold">{name}</h3>
+        <div className="">
+          <span className="">{description}</span>
+          <span className="font-bold">€ {price},-</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Category({ children }) {
   return (
-    <button class="inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-300 to-lime-300 group-hover:from-green-300 group-hover:to-lime-300 ">
-      <span class="px-5 py-2.5 transition-all ease-in duration-75 bg-neutral-50 rounded-md group-hover:bg-opacity-0">{children}</span>
+    <button className="inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-300 to-lime-300 group-hover:from-green-300 group-hover:to-lime-300 ">
+      <span className="px-5 py-2.5 transition-all ease-in duration-75 bg-neutral-50 rounded-md group-hover:bg-opacity-0">{children}</span>
     </button>
   );
 }

@@ -1,7 +1,7 @@
 {
   "name": "wishlist-assessment",
   "version": "0.1.0",
-  "homepage": "https://mvanasselt.github.io/wishlist-assessment/",
+  "homepage": "https://mvanasselt.github.io/wishlist-assessment",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "5.17.0",

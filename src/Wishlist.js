@@ -15,10 +15,10 @@ function WishlistItem({ item, image, name, price, onRemoveWishlistItem }) {
   return (
 
     <div className="flex flex-col w-[200px] bg-neutral-50">
-      <img className="" src={process.env.PUBLIC_URL + '/' + image} alt={name} />
-      <div className="">
+      <img src={process.env.PUBLIC_URL + '/' + image} alt={name} />
+      <div>
         <h3 className="font-bold">{name}</h3>
-        <div className="">
+        <div>
           <span className="font-bold">€ {price},-</span>
           <Button onClick={handleRemoveItem}>Remove from wishlist</Button>
         </div>

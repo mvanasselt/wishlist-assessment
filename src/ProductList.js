@@ -6,7 +6,7 @@ export function ProductList({ products, onAddWishlistItem }) {
 
   return (
     <div className="bg-neutral-100 flex flex-col items-center ">
-      <div className="flex gap-2 m-4">
+      <div className="flex gap-2 m-4 w-screen flex-wrap justify-center ">
         <Category>All</Category>
         <Category>Seed</Category>
         <Category>Fruit</Category>

@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/wishlist-assessment/static/css/main.20e5c7c7.css",
-    "main.js": "/wishlist-assessment/static/js/main.54c57873.js",
+    "main.css": "/wishlist-assessment/static/css/main.43b20de7.css",
+    "main.js": "/wishlist-assessment/static/js/main.7b6ce0fa.js",
     "static/media/rainbow-fruit.png": "/wishlist-assessment/static/media/rainbow-fruit.241f93571e06c23795bf.png",
     "index.html": "/wishlist-assessment/index.html",
-    "main.20e5c7c7.css.map": "/wishlist-assessment/static/css/main.20e5c7c7.css.map",
-    "main.54c57873.js.map": "/wishlist-assessment/static/js/main.54c57873.js.map"
+    "main.43b20de7.css.map": "/wishlist-assessment/static/css/main.43b20de7.css.map",
+    "main.7b6ce0fa.js.map": "/wishlist-assessment/static/js/main.7b6ce0fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.20e5c7c7.css",
-    "static/js/main.54c57873.js"
+    "static/css/main.43b20de7.css",
+    "static/js/main.7b6ce0fa.js"
   ]
 }

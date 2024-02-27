@@ -5,7 +5,7 @@ import { Button } from "./Button";
 const categoryList = ['All', "Seeds", "Fruit", "Herbs", "Vegetables", "Spices"]
 
 export function ProductList({ products, onAddWishlistItem }) {
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState("Fruit");
 
   function handleClick(e) {
     setActive(e.target.id)

@@ -22,6 +22,10 @@ export default function App() {
   function handleRemoveWishlistItem(product) {
     setWishlistItems((items) => items.filter(item => item.productid !== product.productid))
   }
+
+  function handleRemoveAllItems() {
+    setWishlistItems([]);
+  }
  
     useEffect(() => {
       fetchData();
@@ -56,7 +60,7 @@ export default function App() {
     <>
       <Header onShowWishlist={handleShowWishlist} wishlistItems={wishlistItems}/>
       <ProductList products={products} onAddWishlistItem={handleAddWishlistItem}/>
-      {showWishlist && <Wishlist wishlistItems={wishlistItems} onRemoveWishlistItem={handleRemoveWishlistItem}/>}
+      {showWishlist && <Wishlist wishlistItems={wishlistItems} onRemoveWishlistItem={handleRemoveWishlistItem} onRemoveAllItems={handleRemoveAllItems} /> }
     </>
   );
 }

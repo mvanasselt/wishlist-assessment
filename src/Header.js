@@ -8,7 +8,6 @@ export function Header({ onShowWishlist, wishlistItems }) {
         Wishlist
         <WishlistCounter wishlistItems={wishlistItems} />
       </Button>
-
       <h1 className="text-6xl font-bold text-white">Everyday Fresh Food</h1>
     </div>
   );

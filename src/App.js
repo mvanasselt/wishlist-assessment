@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { ProductList } from "./ProductList";
 import { Wishlist } from "./Wishlist";
 import { Header } from "./Header";
-import { useLocalStorageState } from "./useLocalStorageState";
 
 export default function App() {
   const [showWishlist, setShowWishlist] = useState(false);
@@ -60,7 +59,7 @@ export default function App() {
     <>
       <Header onShowWishlist={handleShowWishlist} wishlistItems={wishlistItems}/>
       <ProductList products={products} onAddWishlistItem={handleAddWishlistItem}/>
-      {showWishlist && <Wishlist wishlistItems={wishlistItems} onRemoveWishlistItem={handleRemoveWishlistItem} onRemoveAllItems={handleRemoveAllItems} /> }
+      {showWishlist && <Wishlist wishlistItems={wishlistItems} onRemoveWishlistItem={handleRemoveWishlistItem} onRemoveAllItems={handleRemoveAllItems} onShowWishlist={handleShowWishlist} /> }
     </>
   );
 }

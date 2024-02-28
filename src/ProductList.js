@@ -41,7 +41,7 @@ function ProductTile({ product, name, description, image, price, onAddWishlistIt
   }
 
   return (
-    <div className="bg-neutral-50 w-[250px] flex flex-col items-center gap-1 hover:shadow-xl p-0.5">
+    <div className="bg-neutral-50 w-[250px] flex flex-col items-center gap-1 hover:shadow-xl p-0.5 rounded-md ">
       <img src={process.env.PUBLIC_URL + "/" + image} alt={name} />
 
       <h3 className="font-bold">{name}</h3>
